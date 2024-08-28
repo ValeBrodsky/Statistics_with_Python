@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distribución Normal Truncada</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Incluimos las bibliotecas necesarias para Plotly, jStat, y los sliders -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jstat/1.9.4/jstat.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.6.1/nouislider.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div id="content">
+    <h2>Ejemplo 8.2 - pag.311</h2>
+    <div id="graphs-container">
+        <div id="grafico-muestra" class="graph"></div>
+        <div id="grafico-distribucion" class="graph"></div>
+    </div>
+
+    <div class="slider-container">
+        <div>Tamaño de Muestra</div>
+        <div id="slider-tamano-muestra"></div>
+    </div>
+    
+    <div class="slider-container">
+        <div>Media Muestral</div>
+        <div id="slider-media-muestral"></div> <!-- Asegúrate de que el ID coincida con el script -->
+    </div>
+
+    <div id="probabilidad-texto" class="output-text"></div>
+    <div id="z-score-texto" class="output-text"></div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.6.1/nouislider.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
+
